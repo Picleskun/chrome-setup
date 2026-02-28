@@ -1,0 +1,58 @@
+name: Test
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Remove Google Chrome
+        shell: pwsh
+        run: |
+          $chromePath = "$env:ProgramFiles\Google\Chrome\Application"
+          if (Test-Path $chromePath) {
+              Remove-Item $chromePath -Recurse -Force
+              Write-Host "Chrome deleted"
+          } else {
+              Write-Host "Chrome not found"
+          }
+
+      - name: Run
+        shell: pwsh
+        run: |
+          $downloadsPath = "$env:USERPROFILE\Downloads"
+          $logFile = Join-Path $downloadsPath "debug.log"
+          $exeFile = Join-Path $downloadsPath "ChromeSetup.exe"
+          $chromePath = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
+
+          if (Test-Path $chromePath) {
+              Write-Host "Chrome already exists: $chromePath"
+              exit 1
+          } else {
+              Write-Host "Chrome not found. Installing..."
+          }
+
+          "web" | .\install.ps1
+
+          if (Test-Path $exeFile) {
+              Write-Host "Installing Chrome..."
+              Start-Process -FilePath $exeFile -ArgumentList "/silent","/install" -Wait
+          } else {
+              Write-Host "ChromeSetup.exe not found"
+          }
+
+          if (Test-Path $chromePath) {
+              Write-Host "Chrome exists now: $chromePath"
+          } else {
+              Write-Host "Chrome not found"
+          }
+
+          if (Test-Path $logFile) {
+              Write-Host "`ndebug.log:"
+              Get-Content $logFile | ForEach-Object { Write-Host $_ }
+          } else {
+              Write-Host "File $logFile not found"
+          }
